@@ -1,0 +1,57 @@
+image_root: ''
+ann_root: ''
+dataset: 'flickr'
+
+# set pretrained as a file path or an url
+# pretrained: 'https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_retrieval_coco.pth'
+pretrained: 'https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_vqa_capfilt_large.pth'
+# size of vit model; base or large
+
+vit: 'base'
+batch_size_train: 32
+batch_size_test: 64
+vit_grad_ckpt: True
+vit_ckpt_layer: 4
+init_lr: 1e-5
+
+# vit: 'large'
+# batch_size_train: 16
+# batch_size_test: 32
+# vit_grad_ckpt: True
+# vit_ckpt_layer: 10
+# init_lr: 5e-6
+
+modality: image # image video
+
+# adapter
+adapter: True
+adapter_textual: True
+adapter_visual: True
+adapter_multimodal: True
+
+
+adapter_dim: 512
+
+frame_aware_attention: False  # True False
+video_key_adapter: True
+video_key_adapter_dim: 64
+
+temporal_embed: False
+
+temporal_attention: False
+
+finetune_head: False
+finetune_all: False
+
+image_size: 384
+queue_size: 57600
+alpha: 0.4
+beta: 0
+k_test: 128
+negative_all_rank: False
+
+# optimizer
+weight_decay: 0.05
+min_lr: 0
+max_epoch: 6
+
