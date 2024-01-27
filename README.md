@@ -1,6 +1,6 @@
 # UniAdapter
 
-The official implementation of paper "UniAdapter: Unified Parameter-Efficient Transfer Learning for Cross-modal Modeling", by Haoyu Lu, Mingyu Ding, Yuqi Huo, Guoxing Yang, Zhiwu Lu, Wei Zhan, Masayoshi Tomizuka.
+[ICLR2024] The official implementation of paper "UniAdapter: Unified Parameter-Efficient Transfer Learning for Cross-modal Modeling", by Haoyu Lu, Yuqi Huo, Guoxing Yang, Zhiwu Lu, Wei Zhan, Masayoshi Tomizuka, Mingyu Ding.
 
 <img src="UniAdapter.png" width="700">
 <!--
